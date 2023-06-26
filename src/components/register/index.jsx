@@ -7,11 +7,14 @@ export const Register = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, pass, email)
+    console.log(name, pass, email);
   };
 
   return (
-    <>
+    <div className="auth-form">
+      <div className="heading">
+      <h1>Create account!</h1>
+      </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input
@@ -36,9 +39,9 @@ export const Register = (props) => {
         />
         <button type="submit">Create</button>
       </form>
-      <button onClick={() => props.onFormSwitch("login")}>
+      <button className="switch-btn" onClick={() => props.onFormSwitch("login")}>
         Already have an accuont?
       </button>
-    </>
+    </div>
   );
 };

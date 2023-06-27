@@ -38,6 +38,7 @@
 }
 
 button {
+
   margin-top: 1.5rem;
   max-width: max-content;
   padding: 1rem 3rem;
@@ -50,7 +51,7 @@ button {
   cursor: pointer;
 }
 
-.pass {
+.login-pass {
   display: flex;
   font-size: 1.2rem;
   margin-top: 0.5rem;
@@ -74,4 +75,8 @@ button {
   background: none;
   text-decoration: underline;
   color: #5a5a5a;
+}
+
+svg {
+  vertical-align: middle;
 }

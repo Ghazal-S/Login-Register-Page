@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Icon } from "@iconify/react";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 export const Register = (props) => {
   const [name, setName] = useState("");
@@ -7,39 +9,67 @@ export const Register = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, pass, email);
   };
 
   return (
     <div className="auth-form">
       <div className="heading">
-      <h1>Create account!</h1>
+        <Icon
+          icon="mingcute:user-4-fill"
+          color="#7979ff"
+          width="30"
+          height="30"
+        />
+        <h1>Create account!</h1>
       </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+        <div className="d-flex">
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Icon icon="fa-solid:user" color="#b3b3b3" width="10" height="10" />
+        </div>
         <label htmlFor="email">E-mail</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+        <div className="d-flex">
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <Icon
+            icon="ic:baseline-email"
+            color="#b3b3b3"
+            width="14"
+            height="14"
+          />
+        </div>
         <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          value={pass}
-          onChange={(e) => setPass(e.target.value)}
-        />
-        <button type="submit">Create</button>
+        <div className="d-flex">
+          <input
+            type="password"
+            id="password"
+            value={pass}
+            onChange={(e) => setPass(e.target.value)}
+          />
+          <Icon
+            icon="iconamoon:lock-fill"
+            color="#b3b3b3"
+            width="14"
+            height="14"
+          />
+        </div>
+        <button type="submit">
+          Create <BiRightArrowAlt size={20} />
+        </button>
       </form>
-      <button className="switch-btn" onClick={() => props.onFormSwitch("login")}>
+      <button
+        className="switch-btn"
+        onClick={() => props.onFormSwitch("login")}>
         Already have an accuont?
       </button>
     </div>

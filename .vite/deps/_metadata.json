@@ -1,0 +1,50 @@
+{
+  "hash": "84d533f5",
+  "browserHash": "609335ad",
+  "optimized": {
+    "@iconify/react": {
+      "src": "../../node_modules/@iconify/react/dist/iconify.mjs",
+      "file": "@iconify_react.js",
+      "fileHash": "c188825c",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "18911575",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "010ca4a7",
+      "needsInterop": true
+    },
+    "react-icons/bi": {
+      "src": "../../node_modules/react-icons/bi/index.esm.js",
+      "file": "react-icons_bi.js",
+      "fileHash": "45f2597a",
+      "needsInterop": false
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.esm.js",
+      "file": "react-icons_fa.js",
+      "fileHash": "919234df",
+      "needsInterop": false
+    },
+    "react-icons/fi": {
+      "src": "../../node_modules/react-icons/fi/index.esm.js",
+      "file": "react-icons_fi.js",
+      "fileHash": "2c86f8e2",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-6TTJTGLE": {
+      "file": "chunk-6TTJTGLE.js"
+    },
+    "chunk-QSQYAWSL": {
+      "file": "chunk-QSQYAWSL.js"
+    }
+  }
+}

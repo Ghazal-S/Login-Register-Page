@@ -13,7 +13,7 @@ export const Login = ({ onFormSwitch }) => {
 
   const handleSubmit = (e) => e.preventDefault();
 
-  return (
+  return ( 
     <div className={styles["auth-form"]}>
       <div className={styles["heading"]}>
         <Icon
@@ -26,7 +26,7 @@ export const Login = ({ onFormSwitch }) => {
     </div>
     <form onSubmit={handleSubmit}>
       <label htmlFor="email">E-mail </label>
-      <div className="d-flex">
+      <div>
         <input
           type="email"
           id="email"
@@ -42,7 +42,7 @@ export const Login = ({ onFormSwitch }) => {
         />
         </div>
         <label htmlFor="password">Password</label>
-        <div className="d-flex">
+        <div>
           <input
             type="password"
             id="password"
@@ -70,10 +70,9 @@ export const Login = ({ onFormSwitch }) => {
       </form>
       <button
         className={styles["switch-btn"]}
-        onClick={() => onFormSwitch("register")}
-      >
+        onClick={() => onFormSwitch("register")}>
         Don't have an account?
       </button>
     </div>
-  );
+  ); 
 };

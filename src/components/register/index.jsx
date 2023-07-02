@@ -27,7 +27,7 @@ export const Register = ({ onFormSwitch }) => {
       </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
-        <div className="d-flex">
+        <div>
           <input
             type="text"
             id="name"
@@ -42,7 +42,7 @@ export const Register = ({ onFormSwitch }) => {
          />
          </div>
          <label htmlFor="email">E-mail</label>
-         <div className="d-flex">
+         <div>
           <input
             type="email"
             id="email"
@@ -58,7 +58,7 @@ export const Register = ({ onFormSwitch }) => {
           />
         </div>
         <label htmlFor="password">Password</label>
-        <div className="d-flex">
+        <div>
           <input
             type="password"
             id="password"

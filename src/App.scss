@@ -1,7 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+--font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 line-height: 1.5;
-font-weight: 400 ;
 color: #999999;
   --white-color: #fafafa;
   --black-color: #212121;
@@ -29,6 +28,3 @@ html {
   background-color: darkcyan;
 }
 
-.d-flex {
-  display: flex;
-}

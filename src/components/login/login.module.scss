@@ -36,6 +36,7 @@
 
     div {
       display: flex;
+      
        svg {
         margin-left: -1.2rem;
       }
@@ -43,8 +44,8 @@
   }
 
  .login-pass {
-   margin-top: 0.5rem;
    align-items: center;
+   margin-top: 0.5rem;
    justify-content: space-between;
    font-size: 1.2rem;
   
@@ -52,6 +53,7 @@
     width: max-content;
     margin: 0.4rem;
    }
+
    a {
     color: rgb(121, 121, 255);
     text-decoration: none;
@@ -80,3 +82,4 @@
   vertical-align: middle;
  }
 };
+

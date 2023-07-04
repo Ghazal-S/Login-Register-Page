@@ -12,7 +12,7 @@ export const Register = ({ onFormSwitch }) => {
   const onChange = (e) =>
   setInputs((prev) => ({...prev, [e.target.name]: e.target.value}));
 
-  const handleSubmit = e => e.preventDefault();
+  const onSubmit = e => e.preventDefault();
 
   return (
     <div className={styles["auth-form"]}>
@@ -25,7 +25,7 @@ export const Register = ({ onFormSwitch }) => {
         />
         <h1>Create account!</h1>
       </div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={onSubmit}>
         <label htmlFor="name">Name</label>
         <div>
           <input
